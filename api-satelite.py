@@ -25,7 +25,7 @@ json_file = []
 def busca():
 
     class Parametros:
-        def __init__(self, satelite : str, data_inicio : str, data_fim : str):
+        def __init__(self, satelite, data_inicio, data_fim):
             self.satelite = satelite
             self.inicio = data_inicio
             self.fim = data_fim
@@ -38,12 +38,12 @@ def busca():
             self.nuvem_max.append(nuvem)
         
 
-        def localidade(self, lat : float, lon : float):
+        def localidade(self, lat, lon):
             self.lat.append(float(lat))
             self.lon.append(float(lon))
 
         # problemas aqui na camera
-        def camera(self, cam : str):
+        def camera(self, cam):
             self.cam.append(cam)
 
         def info(self):
