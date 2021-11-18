@@ -34,7 +34,7 @@ def busca():
             self.cam = []
             self.nuvem_max = []
 
-        def nuvem(self, nuvem : float):
+        def nuvem(self, nuvem):
             self.nuvem_max.append(nuvem)
         
 
